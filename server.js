@@ -46,6 +46,10 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/services', (req, res) => {
+
+});
+
 app.get('/home', (req, res) => {
     res.send({
         name: 'Juanito Gamad',
