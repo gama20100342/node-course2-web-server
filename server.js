@@ -17,11 +17,11 @@ app.use((req, res, next) => {
     next();
 });
 
-// app.use((req, res, next) => {
-//     res.render('maintenance.hbs', {
-//         pageTitle: "Hey! Well be right back."
-//     });
-// });
+app.use((req, res, next) => {
+    res.render('maintenance.hbs', {
+        pageTitle: "Hey! Well be right back."
+    });
+});
 
 app.use(express.static(__dirname + '/public/'));
 hbs.registerHelper('getCurrentYear', () => {
