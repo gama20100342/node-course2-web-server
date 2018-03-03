@@ -40,6 +40,12 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/weare', (req, res) => {
+    res.render('we-are.hbs', {
+        pageTitle: "Who we are"
+    });
+});
+
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
         pageTitle: "About Page"
